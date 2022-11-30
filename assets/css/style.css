@@ -126,6 +126,11 @@ span{
     .words h3{
         font-size: 1rem;
     }
+    .angulo img{
+        width: 455px;
+        height: 395px;
+    }
+   
 }
 @media only screen and (min-width: 600px){
     #Rectangle{
@@ -147,6 +152,7 @@ span{
         font-size: 1rem;
     }
    
+   
 }
 
 @media only screen and (min-width: 768px){
@@ -164,6 +170,10 @@ span{
     }
     .words h3{
         font-size: 1.2rem;
+    }
+    .angulo img{
+        width: 540px;
+        height: 395px;
     }
    
 }
@@ -221,6 +231,10 @@ span{
     .final nav{
         font-size: 1rem;
     }
+    .angulo img{
+     width: 512px;
+     height: 395px;
+    }
 }
 /*560 x 536*/ 
 @media only screen and (min-width: 1200px){
@@ -231,8 +245,10 @@ span{
     } 
     .words h3{
         font-size: 1.5rem;
+    } 
+    .angulo img{
+        width: 700px;
     }
-    
 }
 
 
@@ -451,8 +467,7 @@ span{
 .angulo img{
     position: absolute;
     left:  0;
-    width: 512px;
-    height: 258px;
+    
     
 }   
 
@@ -462,6 +477,7 @@ span{
 
 .portafolio{
     background-color: var(--black);
+    
 }
 
 .briefcase h2{
@@ -585,9 +601,33 @@ span{
         /* justify-content: space-between; */
         justify-content: space-evenly;
         text-align: center;
-    }
+    } 
+}
 
-    
+@media only screen and (max-width: 425px){
+   .angulo img{
+    width: 315px;
+    height: 460px;
+   }
+   .skills{
+    font-size: 1.5rem;
+   }
+   .conteiner-skills h3{
+    line-height: normal;
+
+   }
+   .conteiner-skills P{
+    line-height: normal;
+   } 
+   #perfil-photo{
+    width: 200px;
+    height: 213px;
+   }
+   #Rectangle{
+    width: 270px;
+    height: 450px;
+   }
 
 }
+
 
