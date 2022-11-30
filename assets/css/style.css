@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+:root{
+    --yellow: #f1a600;
+    --black: #1f1d2c;
+    --black-gray: #242635;
+    --gray: #e5e5e5;
+    --white: #ffffff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+
+.header-content{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.navbar{
+    position: relative;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.header-information{
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 1.5rem 5rem;
+    
+}
+.header-content h1{
+    position: relative;
+    font-size: 3.1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.header-content h2{
+    position: relative;
+    font-size: 1.5rem;
+    max-width: 600px;
+    color: var(--gray);
+    padding-bottom: 1rem;
+}
+
+.header-content h3{
+    position: relative;
+}
+
+.header-content h4{
+    position: relative;
+    color: var(--gray);
+    padding-bottom: 1rem;
+}
+
+
+span{
+    position: relative;
+    color: var(--yellow);
+    font-size: 1rem;
+}
+
+#perfil-photo{
+    position:relative;
+    
+    
+    
+    
+}
+/*560 x 536*/ /*200 x 213*/
+.social-conteiner{
+    background-color: transparent;
+    display: flex;
+    gap: 1.1rem;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+
+
+
+#Rectangle{
+   position: absolute;
+   top: 0;
+   right:  0; 
+}
+/*viewBox="0 0 282 400"*/
+/*width: 355px*/
+/*heigth:405px*/
+
+@media only screen and (max-width: 600px){
+    #Rectangle{
+        width: 355px;
+        height: 405px;
+    }
+    .footer h2{
+        padding-bottom: 1.5rem;
+    }
+    .social-conteiner{
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .words h3{
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 600px){
+    #Rectangle{
+        width: 355px;
+        height: 405px;
+    }
+    #perfil-photo{
+        width: 200px;
+        height: 213px;
+    }
+    .footer h2{
+        padding-bottom: 1.5rem;
+    }
+    .social-conteiner{
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .words h3{
+        font-size: 1rem;
+    }
+   
+}
+
+@media only screen and (min-width: 768px){
+    #Rectangle{
+        width: 442px;
+        height: 405px;
+    }
+
+    .footer h2{
+        padding-bottom: 1.5rem;
+    }
+    .social-conteiner{
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .words h3{
+        font-size: 1.2rem;
+    }
+   
+}
+@media only screen and (min-width: 992px){
+
+    /*.header-content h1{
+        
+    }*/
+    .header-content h2{
+        
+        padding-right: 3rem;
+    }
+    /*.header-content h3{
+        
+    }*/
+    span{
+        font-size: 1.3rem;
+    }
+    .header-content h4{
+        font-size: 1.3rem;
+    }
+
+    .header-information{
+        flex-direction:row;
+        text-align: start;
+        padding: 1rem 5rem 10rem;
+
+    }
+    .social-conteiner{
+        justify-content: flex-start;
+    }
+    .social-conteiner img{
+        width: 40px;
+        height: 40px;
+    }
+
+    #perfil-photo{
+        width: 560px;
+        height: 536px;
+        
+    }
+    .icon-UA {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+    #Rectangle {
+        width: 355px;
+        height: 695px;
+    }
+    .words h3{
+        font-size: 1.5rem;
+    }
+    .final nav{
+        font-size: 1rem;
+    }
+}
+/*560 x 536*/ 
+@media only screen and (min-width: 1200px){
+    #Rectangle {
+     width: 500px;
+     height: 690px;
+    
+    } 
+    .words h3{
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+    
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.page-content{
+    background-color: var(--black-gray);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 1.5rem 5rem;
+    
+}
+
+.words h2{
+    padding: 3rem;
+    color: var(--white);
+    font-size: 3rem;
+    
+}
+
+.words h3{
+    
+    max-width: 992px;
+    color: var(--gray);
+    
+}
+
+.UVM{
+    padding: 5rem;
+    
+}
+
+.UVM h3{
+    color: var(--white);
+}
+
+.UVM p{
+    color: var(--gray);
+}
+
+.academlo h3{
+    color: var(--white);
+}
+
+.academlo p{
+    color: var(--gray);
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.page-experience{
+    background-color: var(--black);
+}
+
+.word-01 h2{
+    color: var(--white);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 1.5rem 5rem;
+    padding-top: 10rem;
+    font-size: 2.2rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+}
+
+.content h2{
+    color: var(--gray);
+    
+}
+
+.content h3{
+    color: var(--gray);
+
+}
+
+.content p{
+    color: var(--gray);
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.page-skills{
+    background-color: var(--black);
+    
+}
+
+.skills{
+    color: var(--white);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 1.5rem 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+.conteiner-skills h3{
+    color: var(--yellow);
+    padding: 1rem;
+    line-height: 18px;
+    position: relative;
+}
+
+.conteiner-skills h4{
+    color: var(--gray);
+}
+
+.conteiner-skills p{
+    color: var(--gray);
+    padding: 1rem;
+    line-height: 18px;
+    position: relative;
+}
+
+/*.conteiner-skills{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+   
+    
+}*/
+.conteiner-skills{
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: center;
+}
+.porcent{
+    display: flex;
+    flex-direction: column;
+   /* text-align: end;*/
+   align-items: baseline;
+    justify-content: center;
+}
+.palabras{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    text-align: start;
+    justify-content: space-around;
+}
+
+
+
+/*.skills-02{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.skills-03{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.skills-04{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    position: relative;
+
+}
+
+.skills-05{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    padding-bottom: 2.2rem;
+    position: relative;
+}
+*/
+.angulo img{
+    position: absolute;
+    left:  0;
+    width: 512px;
+    height: 258px;
+    
+}   
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*PORTAFOLIO*/
+
+.portafolio{
+    background-color: var(--black);
+}
+
+.briefcase h2{
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+.portafolio-conteiner{
+    padding: 1rem 5rem 5rem;
+}
+
+.portafolio-img{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*FOOTER*/
+
+.footer{
+    background-color: var(--black-gray);
+    font-family: 'Inter', sans-serif;
+}
+
+.footer h2{
+    color: var(--white);
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.contac{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    /*padding: 3rem 1.5rem 3rem 1.5rem;*/
+}
+
+.contac img{
+    padding: 0.5rem;
+}
+
+
+.contac h2{
+    color: var(--white);
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+.contac h3{
+    color: var(--white);
+    font-size: 1.05rem;
+    padding: 0.5rem;
+}
+.contac p{
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1.5rem 3rem 1.5rem;
+
+}
+
+.email h2{
+ color: var(--white);
+ font-size: 1.05rem;
+ padding: 0.5rem;
+}
+.email p{
+ color: var(--gray);
+ font-size: 0.9rem;
+}
+
+.phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2.5rem 5rem;
+}
+
+.final nav{
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 992px){
+    .final{
+        background-color: var(--black);
+    }
+
+    .contac{
+        display: flex;
+        /* flex-direction: column; */
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: space-between; */
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    
+
+}
+
