@@ -495,9 +495,7 @@ span{
     justify-content: center;
 }
 
-.porcent{
-   
-}
+
 .porcent h3{
     color: var(--yellow);
     position: relative;
@@ -507,10 +505,6 @@ span{
 
 }
 
-.palabras{
-    
-
-}
 
 .palabras p{
     color: var(--gray);
