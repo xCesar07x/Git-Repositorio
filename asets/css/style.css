@@ -23,21 +23,91 @@ img{
 body{
     font-family: 'Inter', sans-serif;
 }
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Nav Menu-Hamburguesa*/
 
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    height: 80px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.nav-logo{
+    width: 45px;
+    display: none;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.nav-menu{
+    background-color: var(--black);
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    height: calc( 100vh - 80px );
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: left .5s linear;
+}
+
+
+.nav-item{
+    list-style: none;
+    font-size: 1.25rem;
+    color: var(--gray);
+}
+
+
+#btn-menu:checked ~ .nav-menu{
+    left: 0;
+}
+
+@media screen and ( min-width: 678px ){
+    label{
+        display: none;
+    }
+
+    .nav-menu{
+        position: static;
+        min-height: auto;
+        flex-direction: row;
+        height: 80p;
+        max-height: 80px;
+        justify-content: flex-end;
+        background-color: transparent;
+        gap: 1rem;
+    }
+
+    .nav-item{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .header-content{
     background-color: var(--black);
     color: var(--white);
 }
 
-.navbar{
-    position: relative;
-    padding: 1rem 1.5rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 1;
-}
 
 
 .header-information{
@@ -47,55 +117,55 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 1rem 1.5rem 5rem;
+    padding: 1.5rem 1.5rem 5rem;
     
 }
 .header-content h1{
-    position: relative;
+    
     font-size: 3.1rem;
     padding-bottom: 1rem;
     
 }
 
 .header-content h2{
-    position: relative;
+    
     font-size: 1.5rem;
     max-width: 600px;
     color: var(--gray);
     padding-bottom: 1rem;
 }
 
-.header-content h3{
-    position: relative;
-}
+/*.header-content h3{
+    
+}*/
 
 .header-content h4{
-    position: relative;
+    
     color: var(--gray);
     padding-bottom: 1rem;
 }
 
 
 span{
-    position: relative;
+    
     color: var(--yellow);
     font-size: 1rem;
 }
 
-#perfil-photo{
-    position:relative;
+/*#perfil-photo{
     
     
     
     
-}
+    
+}*/
 /*560 x 536*/ /*200 x 213*/
 .social-conteiner{
     background-color: transparent;
     display: flex;
     gap: 1.1rem;
     justify-content: center;
-    position: relative;
+    
     
     
 }
@@ -175,7 +245,17 @@ span{
         width: 540px;
         height: 395px;
     }
+    
+    
    
+}
+@media only screen and (max-width: 768px ) {
+    .palabras p{
+        padding: 9.5px
+    }
+    .palabras p{
+        font-size: larger;
+    }
 }
 @media only screen and (min-width: 992px){
 
@@ -235,8 +315,21 @@ span{
      width: 512px;
      height: 395px;
     }
+    #delete{
+        display: none;
+    }
 }
-/*560 x 536*/ 
+/*560 x 536*/
+@media only screen and (min-width: 1024px) {
+    .porcent h3{
+        font-size: xx-large;
+    }
+    .palabras p{
+        font-size: xx-large;
+    }
+}
+
+
 @media only screen and (min-width: 1200px){
     #Rectangle {
      width: 500px;
@@ -248,7 +341,16 @@ span{
     } 
     .angulo img{
         width: 700px;
+        
     }
+   .palabras p{
+    padding: 17.5px;
+    font-size: xx-large;
+   }
+   .porcent h3{
+    padding: 17.5px;
+    font-size: xx-large;
+   }
 }
 
 
@@ -365,105 +467,58 @@ span{
     text-align: center;
     padding: 1rem 1.5rem 1.5rem;
     padding-top: 1.5rem;
-    font-size: 2.2rem;
+    font-size: 2.2;
     position: relative;
 }
 
-.conteiner-skills h3{
+/*.conteiner-skills h3{
     color: var(--yellow);
     padding: 1rem;
     line-height: 18px;
     position: relative;
 }
 
-.conteiner-skills h4{
-    color: var(--gray);
-}
+
 
 .conteiner-skills p{
     color: var(--gray);
     padding: 1rem;
     line-height: 18px;
     position: relative;
-}
-
-/*.conteiner-skills{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    
-   
-    
 }*/
+
+
 .conteiner-skills{
     display: flex;
-    padding: 1rem;
-    flex-direction: row;
+    padding: 1.5rem 1rem 2.5rem 1rem;
+    gap: 1.5rem;
     justify-content: center;
 }
+
 .porcent{
-    display: flex;
-    flex-direction: column;
-   /* text-align: end;*/
-   align-items: baseline;
-    justify-content: center;
+   
 }
+.porcent h3{
+    color: var(--yellow);
+    position: relative;
+    padding: 0.5rem;
+    
+    
+
+}
+
 .palabras{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    text-align: start;
-    justify-content: space-around;
+    
+
 }
 
-
-
-/*.skills-02{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1.5rem;
-    padding: 1rem;
+.palabras p{
+    color: var(--gray);
     position: relative;
+    padding: 7.4px
+    
 }
 
-.skills-03{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1.5rem;
-    padding: 1rem;
-    position: relative;
-}
-
-.skills-04{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1.5rem;
-    padding: 1rem;
-    position: relative;
-
-}
-
-.skills-05{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1.5rem;
-    padding: 1rem;
-    padding-bottom: 2.2rem;
-    position: relative;
-}
-*/
 .angulo img{
     position: absolute;
     left:  0;
@@ -477,7 +532,7 @@ span{
 
 .portafolio{
     background-color: var(--black);
-    
+    position: relative;
 }
 
 .briefcase h2{
@@ -612,13 +667,10 @@ span{
    .skills{
     font-size: 1.5rem;
    }
-   .conteiner-skills h3{
-    line-height: normal;
-
+   .nav{
+    height: 50px;
    }
-   .conteiner-skills P{
-    line-height: normal;
-   } 
+   
    #perfil-photo{
     width: 200px;
     height: 213px;
@@ -627,7 +679,19 @@ span{
     width: 270px;
     height: 450px;
    }
+   .palabras p{
+    font-size: medium;
+   }
 
 }
+@media only screen and (max-width:375px ) {
+    .angulo img{
+        width: 295px;
+    }
+}
 
-
+@media only screen and (max-width:320px ) {
+    .angulo img{
+        width: 265px;
+    }
+}

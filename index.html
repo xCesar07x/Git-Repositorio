@@ -5,29 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="icon" href="asets/Logos/Academlo logo.png">
 
     <link rel="stylesheet" href="asets/css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <nav class="navbar">
-                <img  src="asets/iconos/menu.svg" alt="icon-menu">
 
-            </nav>
+    <nav class="nav">
+        <img class="nav-logo" src="asets/Logos/startup.png" alt="logo">
+
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+            <i class='bx bx-menu bx-md'></i>
+        </label>
+
+        <ul class="nav-menu">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Acerca de mi</li>
+            <li class="nav-item">Mis habilidades</li>
+            <li class="nav-item">Mis portafolio</li>
+            <li class="nav-item">Contacto</li>
+        </ul>
+  
+    </nav>
+    
+    <header class="header">
+          
+        <div class="header-content">
+           
             <section class="header-information">
-                <div>
-                    <img id="Rectangle" src="asets/Vectores/Rectangle 34-1.svg" alt="">
-                    
-                </div>
+              
                 <section>
+                    <!--<div>
+                        <img id="Rectangle" src="asets/Vectores/Rectangle 34-1.svg" alt="">
+                        
+                    </div>-->
                    <div>
                     <h1 >Cesar Rios</h1>
                 
                      <h2 >Creo, diseño y desarrollo para darle valor a tu producto.</h2>
             
-                     <h3 ><span>+5 años</span></h3>
+                     <h3 ><span>5 meses</span></h3>
 
                      <h4 >de experiencia</h4>
                     
@@ -47,7 +68,7 @@
                 </section>
                 <section class="img-container">
                     <div>
-                     <img id="perfil-photo" src="asets/Logos/photo desktop.png" alt="photo-mobile">
+                     <img id="perfil-photo" src="asets/Logos/Cesar-img.jpg" alt="photo-mobile">
                     </div>
                 </section>
             </section>
@@ -63,24 +84,12 @@
                 </div>
                 <div>
                     <h3>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis corporis consequatur dicta dolor magnam, omnis sed eligendi maxime, eos in amet illum rerum quae autem odit deleniti quis quos sequi.
+                        Soy un joven apasionado por la programacion, tengo disciplina ,aptitud ,disposicion para lograr mis objetivos que me proponga, y los que a de venir en el futuro. Estoy dispuesto a trabajar en equipo, para apoyar o ayudar en lo que pueda. Ser programador significa innovar.
                     </h3>
                 </div>
             </section>
             <div class="icon-UA">
-                <section class="UVM">
-                    <article>
-                        <img src="asets/Logos/image 9.jpg" alt="uvm-logo">
-                    </article>
-                    <div>
-                        <h3>
-                            UVM
-                        </h3>
-                        <p>
-                            2010-2014
-                        </p>
-                    </div>
-                </section>
+                
                 <section class="academlo">
                     <article>
                         <img id="icon-A" src="asets/Logos/logo_academlo 5.png" alt="academlo-logo">
@@ -96,7 +105,7 @@
                 </section>
             </div>
         </div>
-        <div>
+        <!--<div>
             <section class="page-experience">
                 <div class="word-01">
                     <h2>
@@ -169,7 +178,7 @@
                     </div>
                 </section>
             </section>
-        </div>
+        </div>-->
         <div class="page-skills">
             <section class="angulo">
                <div>
@@ -184,50 +193,60 @@
                 </div>
             </section>
             <div class="conteiner-skills">
-                <section class="porcent">
-                    <div >
-                        <h3>
+                <section class="conteiner-porcent">
+                    <div class="porcent">
+                        <div>
+                          <h3>
                             95%
-                        </h3>
-                        <h3>
-                            95%
-                        </h3>
-                        <h3>
-                            70%
-                        </h3>
+                          </h3>
+                          
+                        </div>
+                        <div>
+                            <h3 id="delete" >
+                                95%
+                            </h3>
+                            
+                        </div>
+                        <div>
+                            <h3>
+                                70%
+                            </h3>
+                            
+                        </div>
+                       <div>
                         <h3>
                             90%
                         </h3>
-                        <h3>
+                       
+                       </div>
+                       <div>
+                         <h3>
                             90%
-                        </h3>
+                         </h3>
+                        
+                       </div>
                     </div>
                 </section>
-                <section class="palabras">
-                    <div>
+                <section class="conteiner-palabras">
+                    <div class="palabras">
                         <p>
                             Mobile app desing
                         </p>
-                        
-                    
-                        
-                        <p>
+            
+                        <p id="delete" >
                             Web desing
                         </p>
-                    
-                        
+                
                         <p>
                             Motion desing
                         </p>
                     
-                       
-                        <p>
+                        <p id="special-word">
                             Creacion y
                             mantenimiento de
                             sistemas de diseños
                         </p>
                     
-                        
                         <p>
                             Gestion de diseños
                         </p>
@@ -247,17 +266,23 @@
         <div class="portafolio-conteiner">
             <section class="portafolio-img">
                 <div>
-                    <img src="asets/Logos/image 9-1.jpg" alt="">
+                    <img src="asets/Logos/img-01.jpg" alt="">
                 </div>
             </section>
        
             <section class="portafolio-img">
                 <div>
-                    <img src="asets/Logos/image 10.jpg" alt="">
+                    <img src="asets/Logos/img-03.jpg" alt="">
                 </div>
         
             </section>
         
+            <section class="portafolio-img">
+                <div>
+                    <img src="asets/Logos/img-02.jpg" alt="">
+                </div>
+               
+            </section>
             <section class="portafolio-img">
                 <div>
                     <img src="asets/Logos/image 11.jpg" alt="">
