@@ -405,12 +405,83 @@ span{
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 1rem 1.5rem 5rem;
-    padding-top: 10rem;
+    padding: 2rem 1.5rem;
     font-size: 2.2rem;
+}
+.content-experience{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem 4rem;
+}
+
+.content-icon{
+    display: flex;
+    width: 80px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 1.5rem;
+    gap: 3rem;
+
+    
 }
 
 .content{
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+    font-size: x-small;
+    padding-right: 0.5rem;
+
+}
+
+@media only screen and ( min-width:375px ) {
+    .content-icon{
+        width: calc( 80px + 10px )
+    }
+}
+
+@media only screen and ( min-width:425px ) {
+    .content-icon{
+        width: calc( 80px + 20px )
+    }
+}
+
+@media screen and ( min-width:500px ) and (max-width:768px){
+    .content-icon{
+        width: calc( 80px + 27px )
+    }
+    .content{
+        padding-right: 2rem;
+        font-size: small;
+    } 
+}
+
+@media screen and ( min-width:600px ) and (max-width:768px){
+    .content{
+    padding-right: 3rem;
+    font-size: smaller;
+  } 
+}
+@media only screen and ( min-width:900px ) /*and (max-width:1440)*/{
+
+    .content-icon{
+        width: calc( 80px + 80px )
+    }
+    .content{
+        padding-right: 5rem;
+    font-size: x-large;
+  } 
+}
+
+@media screen and ( min-width: 769px ) and ( max-width: 899px ) {
+    .content{
+        font-size: initial;
+    }
+}
+
+/*.content{
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -434,7 +505,7 @@ span{
 
 .content p{
     color: var(--gray);
-}
+}*/
 
 /*------------------------------------------------------------------------------------------------------------*/
 
